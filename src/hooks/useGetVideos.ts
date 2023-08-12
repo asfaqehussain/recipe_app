@@ -7,7 +7,7 @@ const useGetVideos = () => {
   const [resdata, setResData] = useState();
   const [isLoading, setIsLoading] = useState(false);
 
-  const fetchVideos = async (url: string, data?: any) => {
+  const fetchVideos = async (url: string) => {
     return new Promise(async (resolve, reject) => {
       try {
         setIsLoading(true);

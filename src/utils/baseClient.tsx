@@ -4,7 +4,6 @@ class BaseClient {
   static client = (): AxiosInstance => {
     const instance = axios.create({
       baseURL: 'https://tasty.p.rapidapi.com/recipes/',
-      //   baseURL: Config.BASE_URL,
       headers: {
         'Content-Type': 'application/json',
         'x-rapidapi-key': '10bc2beeacmshd0079b49693f125p1151f2jsnb6e0efb38ee7',

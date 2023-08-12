@@ -23,7 +23,6 @@ const ListScreen = () => {
     fetchVideos(`list?from=0&size=20`)
       .then(resp => {
         setListData(resp);
-        console.log('--', resp.results.length);
       })
       .catch(err => {
         console.log('err ==>> ', err);
